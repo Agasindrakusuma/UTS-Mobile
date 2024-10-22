@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/agas">
+
+    <!-- App Logo or Icon -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="129dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="32dp"
+        aandroid:elevation="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/agas12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textEmailAddress"
+        android:elevation="5dp"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPassword"
+        android:elevation="5dp"/>
+
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:elevation="10dp"
+        android:gravity="center"/>
+
+</LinearLayout>
